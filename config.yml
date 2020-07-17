@@ -1,0 +1,16 @@
+title: Java script Learning Project
+description: Java Script Basics
+template:
+  repo: java-script-learning-project-template
+  name: java-script-learning-project
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
